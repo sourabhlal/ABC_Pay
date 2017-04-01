@@ -5,17 +5,7 @@ import 'rxjs/add/operator/map'
 @Component({
   selector: 'balance',
   template: `
-<ion-card>
-
-  <ion-card-header>
     {{balance}}
-  </ion-card-header>
-
-  <ion-card-content>
-    <!-- Add card content here! -->
-  </ion-card-content>
-
-</ion-card>
    `
 })
 export class Balance {
