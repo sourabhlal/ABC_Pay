@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
+import {LocalNotifications} from "@ionic-native/local-notifications";
 
 
 @Component({
@@ -12,15 +13,22 @@ import { TabsPage } from '../pages/tabs/tabs';
 export class MyApp {
   rootPage:any = TabsPage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
-    splashScreen.show();
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,private localNotifications: LocalNotifications) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       setTimeout(function(){
         splashScreen.hide();
-      },2000)
+
+        localNotifications.schedule({
+          text: 'Delayed ILocalNotification',
+          at: new Date(new Date().getTime() + 3600),
+          led: 'FF0000',
+          sound: null
+        });
+
+      },3000)
     });
   }
 }
