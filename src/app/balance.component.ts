@@ -35,7 +35,7 @@ export class Balance {
         .subscribe(balance => this.balance = balance.balance );
     });
 
- 
+
 
   }
 }
