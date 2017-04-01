@@ -1,41 +1,39 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Savings
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <!--<ion-list>-->
-    <!--<ion-list-header>Follow us on Twitter</ion-list-header>-->
-    <!--<ion-item>-->
-      <!--<ion-icon name="ionic" item-left></ion-icon>-->
-      <!--@ionicframework-->
-    <!--</ion-item>-->
-  <!--</ion-list>-->
 
   <ion-card>
-    <ion-card-header>
-      FAQs
-    </ion-card-header>
-    <ion-card-content>
-      Find answers of the most frequently asked about ABCPay app
-    </ion-card-content>
 
+    <canvas #lineCanvas></canvas>
 
-  </ion-card>
-
-  <ion-card>
-    <img src="assets/img/piggy-bank-1047211_1280.jpg"/>
     <ion-card-content>
       <ion-card-title>
-        Nine Inch Nails Live
+        Savings: $6.00
       </ion-card-title>
-      <p>
-        The most popular industrial group ever, and largely
-        responsible for bringing the music to a mass audience.
-      </p>
     </ion-card-content>
+
+
+    <ion-list>
+      <ion-item>
+        <h2 item-left>04/01/2017</h2>
+        <ion-badge item-right> <h2>+$7.00</h2></ion-badge>
+      </ion-item>
+      <ion-item>
+        <h2 item-left>03/31/2017</h2>
+        <ion-badge item-right> <h2>-$2.00</h2></ion-badge>
+      </ion-item>
+      <ion-item>
+        <h2 item-left>03/30/2017</h2>
+        <ion-badge item-right> <h2>+$1.00</h2></ion-badge>
+      </ion-item>            
+    </ion-list>
+
+
+
   </ion-card>
-</ion-content>
