@@ -12,6 +12,8 @@ import { Transaction } from './transaction.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {LocalNotifications} from "@ionic-native/local-notifications";
+
 import {ModalContentPage} from "../pages/about/model_content_page.component";
 
 @NgModule({
@@ -24,7 +26,7 @@ import {ModalContentPage} from "../pages/about/model_content_page.component";
     TargetsPage,
     Balance,
     Transaction,
-      ModalContentPage
+    ModalContentPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -44,6 +46,7 @@ import {ModalContentPage} from "../pages/about/model_content_page.component";
   providers: [
     StatusBar,
     SplashScreen,
+    LocalNotifications,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
