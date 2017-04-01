@@ -25,7 +25,7 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
         </ion-header>
         
         <ion-content>
-            <ion-list>
+            <!--<ion-list>-->
                 <!--<ion-item>-->
                     <!--<ion-avatar item-left>-->
                         <!--<img src="{{character.image}}">-->
@@ -33,13 +33,20 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
                     <!--<h2>{{character.name}}</h2>-->
                     <!--<p>{{character.quote}}</p>-->
                 <!--</ion-item>-->
-                <ion-item *ngFor="let item of character['items']">
-                    {{item.title}}
-                    <ion-note item-right>
-                        {{item.note}}
-                    </ion-note>
-                </ion-item>
-            </ion-list>
+                
+                <!--<ion-item *ngFor="let item of character['items']">-->
+                    <!--{{item.title}}-->
+                    <!--<ion-note item-right>-->
+                        <!--{{item.note}}-->
+                    <!--</ion-note>-->
+                <!--</ion-item>-->
+            <!--</ion-list>-->
+            <ion-item>
+                <ion-label floating>New allowance amount</ion-label>
+                <ion-input type="text"></ion-input>
+            </ion-item>
+            
+            
         </ion-content>
     `
 })
