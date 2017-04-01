@@ -7,9 +7,14 @@ import {Observable} from 'rxjs/Rx';
 @Component({
   selector: 'transaction-history',
   template: `<ion-list>
-    <button ion-item *ngFor="let transaction of transactions">
-      {{transaction.merchant.emoji}}  {{transaction.merchant.name}}  {{transaction.amount}}
-    </button>
+    <ion-item *ngFor="let transaction of transactions">
+    <ion-avatar item-left>
+      <img src="{{transaction.merchant.logo}}">
+    </ion-avatar>
+      <h2>{{transaction.merchant.name}} {{transaction.merchant.emoji}}</h2>
+      <ion-note style="font-size:12px; align-self: flex-start;">{{ transaction.created |date:'MM/dd/yyyy @ h:mma'}}</ion-note>
+      <h1 item-right>{{transaction.amount}}</h1>
+    </ion-item>
   </ion-list>`
 })
 export class Transaction {
@@ -25,7 +30,7 @@ export class Transaction {
         .map(res => res.json())
         // Subscribe to the observable to get the parsed people object and attach it to the
         // component
-        .subscribe(transactions => this.transactions = transactions );
+        .subscribe(transactions => this.transactions = transactions.reverse() );
       } catch (error) {
         return [{merchant: {emoji: "Eror", name:"Error"},amount: "Error"}]
       }
