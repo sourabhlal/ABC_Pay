@@ -5,6 +5,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { TargetsPage } from '../pages/targets/targets';
 
 import { Balance } from './balance.component';
 import { Transaction } from './transaction.component';
@@ -20,6 +21,7 @@ import {ModalContentPage} from "../pages/about/model_content_page.component";
     ContactPage,
     HomePage,
     TabsPage,
+    TargetsPage,
     Balance,
     Transaction,
       ModalContentPage
@@ -34,6 +36,7 @@ import {ModalContentPage} from "../pages/about/model_content_page.component";
     ContactPage,
     HomePage,
     TabsPage,
+    TargetsPage,
     Balance,
     Transaction,
     ModalContentPage
