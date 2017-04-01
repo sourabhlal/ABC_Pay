@@ -6,24 +6,30 @@
 
 <ion-content padding>
   
-  <ion-card class="title-card">
+  <ion-card>
 
   <ion-card-header>
-    <balance></balance> remaining
+    <balance class="title-card"></balance> this week
   </ion-card-header>
  
   <ion-card-content>
     <div class="item item-text-wrap">
-          <div class="loader" style="width: 30%;">
-            <p class="percent">30% left</p>
-          </div>
-      </div>
+        <div class="loader" style="width: 30%;">
+          <p class="percent">30% left</p>
+        </div>
+    </div>
   </ion-card-content>
   </ion-card>
 
   <ion-card>
+      <ion-card-content>
+      <ion-icon name="alert" style="color:red"></ion-icon> At this rate you will run out of money by Monday!
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
   <ion-card-header>
-    Last transactions
+    Today's transactions
   </ion-card-header>
 
   <ion-list>
