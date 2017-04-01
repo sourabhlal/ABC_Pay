@@ -5,15 +5,16 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { TargetsPage } from '../pages/targets/targets';
 
 import { Balance } from './balance.component';
 import { Transaction } from './transaction.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {ModalContentPage} from "../pages/about/model_content_page.component";
 import {LocalNotifications} from "@ionic-native/local-notifications";
 
+import {ModalContentPage} from "../pages/about/model_content_page.component";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {LocalNotifications} from "@ionic-native/local-notifications";
     ContactPage,
     HomePage,
     TabsPage,
+    TargetsPage,
     Balance,
     Transaction,
     ModalContentPage
@@ -36,6 +38,7 @@ import {LocalNotifications} from "@ionic-native/local-notifications";
     ContactPage,
     HomePage,
     TabsPage,
+    TargetsPage,
     Balance,
     Transaction,
     ModalContentPage
