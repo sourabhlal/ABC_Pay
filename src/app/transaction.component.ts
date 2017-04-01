@@ -7,9 +7,13 @@ import {Observable} from 'rxjs/Rx';
 @Component({
   selector: 'transaction-history',
   template: `<ion-list>
-    <button ion-item *ngFor="let transaction of transactions">
-      {{transaction.merchant.emoji}}  {{transaction.merchant.name}}  {{transaction.amount}}
-    </button>
+    <ion-item *ngFor="let transaction of transactions">
+    <ion-avatar item-left>
+      <img src="{{transaction.merchant.logo}}">
+    </ion-avatar>
+      <h2>{{transaction.merchant.name}} {{transaction.merchant.emoji}}</h2>
+      <h1 item-right>{{transaction.amount}}</h1>
+    </ion-item>
   </ion-list>`
 })
 export class Transaction {
