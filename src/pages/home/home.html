@@ -5,45 +5,37 @@
 </ion-header>
 
 <ion-content padding>
-  <balance></balance>
-  <ion-card class="title-card">
+  
+  <ion-card>
 
   <ion-card-header>
-    $8.53 remaining
+    <balance class="title-card"></balance> this week
   </ion-card-header>
  
   <ion-card-content>
     <div class="item item-text-wrap">
-          <div class="loader" style="width: 30%;">
-            <p class="percent">30% left</p>
-          </div>
-      </div>
+        <div class="loader" style="width: 30%;">
+          <p class="percent">30% left</p>
+        </div>
+    </div>
   </ion-card-content>
   </ion-card>
 
   <ion-card>
-  <ion-card-header>
-    Last transactions
-  </ion-card-header>
+      <ion-card-content>
+      <ion-icon name="alert" style="color:red"></ion-icon> At this rate you will run out of money by Monday!
+    </ion-card-content>
+  </ion-card>
 
-  <ion-list>
-    <button ion-item>
-      <ion-icon name="cart" item-left></ion-icon>
-      <div>Candy</div>
-      <div>$1.50</div>
-    </button>
+  <ion-card>
+    <ion-card-header>
+      Latest transactions
+    </ion-card-header>
 
-    <button ion-item>
-      <ion-icon name="cafe" item-left></ion-icon>
-      <div>Juice</div>
-      <div>$2.00</div>
-    </button>
+    <transaction-history>
 
-    <button ion-item>
-      <ion-icon name="cafe" item-left></ion-icon>
-      <div>Croissant</div>
-      <div>$1.00</div>
-    </button>
-  </ion-list>
-</ion-card>
+    </transaction-history>
+
+
+      </ion-card>
 </ion-content>
