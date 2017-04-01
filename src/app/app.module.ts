@@ -11,6 +11,7 @@ import { Transaction } from './transaction.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {ModalContentPage} from "../pages/about/model_content_page.component";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     Balance,
-    Transaction
+    Transaction,
+      ModalContentPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -33,7 +35,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     Balance,
-    Transaction
+    Transaction,
+    ModalContentPage
   ],
   providers: [
     StatusBar,
