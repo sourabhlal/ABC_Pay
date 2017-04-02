@@ -7,11 +7,16 @@ import {Observable} from 'rxjs/Rx';
 @Component({
   selector: 'message',
   template: `
-<ion-icon name="alert" style="color: {{color}}"></ion-icon>  {{message}}
+
+  <ion-card [ngClass]="[class]">
+      <ion-card-content>
+      <ion-icon name="alert"></ion-icon>  {{message}}
+    </ion-card-content>
+  </ion-card>
    `
 })
 export class Message {
-  color: string;
+  class: string;
   message: string;
   remaining: string;
 
@@ -25,7 +30,7 @@ export class Message {
 
   constructor(private http:Http) {
 
-    this.color = "red";
+    this.class = "message-regular";
     
     let timer = Observable.timer(0,5000);
     timer.subscribe(t=> {
@@ -35,13 +40,14 @@ export class Message {
         // Subscribe to the observable to get the parsed people object and attach it to the
         // component
         .subscribe(data => this.remaining = data.percentage);
-        this.color = "red"
+        this.class = "message-regular";
         if(parseInt(this.remaining) < 30){
           this.message = "Looks like you're getting low on todays spening money Swift. Make sure not to overspend!"
         }if(parseInt(this.remaining) === 0){
+          this.class = "message-alarm";
           this.message = "Oh No! You're now overdrawn! You've now used up more money than you have. Money is not infinite you need to take care to spend carefully."
         }else {
-          this.color = "#2eb82e"
+          this.class = "message-regular";
           this.message = "You dont have to spend all your allowance at once. Remember to save"
         }
     });
