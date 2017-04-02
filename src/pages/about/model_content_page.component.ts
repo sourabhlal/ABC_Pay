@@ -34,7 +34,7 @@ import {Http, URLSearchParams} from '@angular/http';
 
             <form (ngSubmit)="submit()">
                 <ion-item>
-                    <ion-label floating>Daily Allowance</ion-label>
+                    <ion-label >Daily Allowance</ion-label>
                     <ion-input type="text" [(ngModel)]="balance" name="balance"></ion-input>
                 </ion-item>
                 

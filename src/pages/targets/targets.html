@@ -1,41 +1,71 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Targets
+      Tips
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <ion-card>
+  <img src="assets/img/overdraft.png"/>
     <ion-card-header>
-      FAQs
+      Whoops! You have overdrafted!
     </ion-card-header>
     <ion-card-content>
-      Find answers of the most frequently asked about ABCPay app
+      Its not good to overdraft your account! It's spending money that you do not have, and will have to repay!
     </ion-card-content>
-
-
-
     <ion-row>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
       <ion-col>
-
-      </ion-col>
-      <ion-col>
-
-      </ion-col>
-      <ion-col>
-      </ion-col>
-      <ion-col>
-        <button ion-button  clear small (click)="openModal({charNum: 0})">
-
-          <!--<ion-icon name=""></ion-icon>-->
-          <div>read</div>
+        <button ion-button clear small (click)="openModalOverdraft({charNum: 0})">
+          <div>Learn More</div>
         </button>
       </ion-col>
     </ion-row>
-
   </ion-card>
+
+  <ion-card>
+  <img src="assets/img/budget.jpg"/>
+    <ion-card-header>
+      Budget planning is super cool!
+    </ion-card-header>
+    <ion-card-content>
+      It’s not the money itself that’s valuable, but the fact that you can choose what to get/do with it!
+    </ion-card-content>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col>
+        <button ion-button clear small (click)="openModalBudget({charNum: 0})">
+          <div>Learn more</div>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>   
+
+  <ion-card>
+  <img src="assets/img/umbrella.jpg"/>
+    <ion-card-header>
+      You aren't saving very much!
+    </ion-card-header>
+    <ion-card-content>
+      Saving is spending in the future! Keep something for a rainy day!
+    </ion-card-content>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col>
+        <button ion-button clear small (click)="openModalSavings({charNum: 0})">
+          <div>Learn more</div>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card> 
 
   <ion-card>
     <img src="assets/img/piggy-bank-1047211_1280.jpg"/>
