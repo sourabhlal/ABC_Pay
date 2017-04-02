@@ -10,7 +10,7 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
             <ion-toolbar>
 
                 <ion-title>
-                    FAQs
+                    Overdraft Explainer
                 </ion-title>
 
                 <ion-buttons start>
