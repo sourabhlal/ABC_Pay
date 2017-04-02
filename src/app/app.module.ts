@@ -8,7 +8,10 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { TargetsPage } from '../pages/targets/targets';
 
 import { Balance } from './balance.component';
+import { AccountBalance } from './account-balance.component';
 import { Transaction } from './transaction.component';
+import { Allowance } from './allowance.component';
+import { Spent } from './spent.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,8 +33,10 @@ import {ModalContentPage3} from "../pages/targets/lessons3_modal_content_page.co
     Transaction,
     ModalContentPage,
     ModalContentPage2,
-    ModalContentPage3
-
+    ModalContentPage3,
+    Allowance,
+    Spent,
+    AccountBalance
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -48,7 +53,10 @@ import {ModalContentPage3} from "../pages/targets/lessons3_modal_content_page.co
     Transaction,
     ModalContentPage,
     ModalContentPage2,
-    ModalContentPage3
+    ModalContentPage3,
+    Allowance,
+    Spent,
+    AccountBalance
   ],
   providers: [
     StatusBar,
