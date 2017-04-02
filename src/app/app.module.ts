@@ -13,6 +13,8 @@ import { Transaction } from './transaction.component';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {ModalContentPage} from "../pages/about/model_content_page.component";
+import {ModalContentPage2} from "../pages/targets/lessons_modal_content_page.component";
+import {ModalContentPage3} from "../pages/targets/lessons3_modal_content_page.component";
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import {ModalContentPage} from "../pages/about/model_content_page.component";
     TargetsPage,
     Balance,
     Transaction,
-      ModalContentPage
+      ModalContentPage,
+      ModalContentPage2,
+      ModalContentPage3
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -39,7 +43,9 @@ import {ModalContentPage} from "../pages/about/model_content_page.component";
     TargetsPage,
     Balance,
     Transaction,
-    ModalContentPage
+    ModalContentPage,
+      ModalContentPage2,
+    ModalContentPage3
   ],
   providers: [
     StatusBar,
