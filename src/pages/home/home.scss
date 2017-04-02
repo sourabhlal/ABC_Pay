@@ -8,12 +8,24 @@ page-home {
 }
 
 .loader{
-	background: #2eb82e !important;
+	background: black;
 	border-radius:100px;
 	height:20px;
 	p{
 		text-align:center;
-		color:black !important;
+		color:white !important;
 		text-align:center;
 	}
+}
+
+.positive-balance {
+	background: #2eb82e !important;	
+}
+
+.low-balance {
+	background: #2ebeee !important;	
+}
+
+.overdrawn {
+	background: red;
 }
