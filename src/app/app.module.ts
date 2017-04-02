@@ -18,6 +18,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {LocalNotifications} from "@ionic-native/local-notifications";
 
 import {ModalContentPage} from "../pages/about/model_content_page.component";
+import {ModalContentPage2} from "../pages/targets/lessons_modal_content_page.component";
+import {ModalContentPage3} from "../pages/targets/lessons3_modal_content_page.component";
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import {ModalContentPage} from "../pages/about/model_content_page.component";
     Balance,
     Transaction,
     ModalContentPage,
+    ModalContentPage2,
+    ModalContentPage3,
     Allowance,
     Spent,
     AccountBalance
@@ -48,6 +52,8 @@ import {ModalContentPage} from "../pages/about/model_content_page.component";
     Balance,
     Transaction,
     ModalContentPage,
+    ModalContentPage2,
+    ModalContentPage3,
     Allowance,
     Spent,
     AccountBalance

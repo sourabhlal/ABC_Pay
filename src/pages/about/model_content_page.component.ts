@@ -27,6 +27,14 @@ import {Http, URLSearchParams} from '@angular/http';
         </ion-header>
         
         <ion-content>
+<<<<<<< HEAD
+            
+            <ion-item>
+                <ion-label floating>New allowance amount</ion-label>
+                <ion-input type="text"></ion-input>
+            </ion-item>
+            
+=======
        
 
             <ion-list>
@@ -44,6 +52,7 @@ import {Http, URLSearchParams} from '@angular/http';
                 
               </ion-list>
 
+>>>>>>> d379b44d4b04aef931df5f5139b056ad0f02b36e
             
         </ion-content>
     `
