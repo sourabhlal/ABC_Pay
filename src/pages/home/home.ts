@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
+import {SplashScreen} from "@ionic-native/splash-screen";
 
 @Component({
   selector: 'page-home',
@@ -8,8 +9,8 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(public navCtrl: NavController,splashScreen: SplashScreen) {
+    splashScreen.hide();
   }
 
 }

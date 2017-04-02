@@ -26,10 +26,18 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cca5fe', endColorstr='#27bbec', GradientType=1 );
 }
 
-.ion-page ion-content{
+.ion-page ion-content, .ion-page .scroll-content {
   background:transparent !important;
 }
 
 ion-header .toolbar-background{
   background: rgba(255,255,255,0.9) !important;
+}
+
+.modal-wrapper ion-content, .modal-wrapper .scroll-content{
+  background-color: #f1f1f1;
+}
+
+ion-card .button-inner{
+  font-size:17px !important;
 }

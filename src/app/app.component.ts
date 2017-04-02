@@ -19,16 +19,16 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       setTimeout(function(){
-        splashScreen.hide();
+
 
         localNotifications.schedule({
           text: 'Delayed ILocalNotification',
           at: new Date(new Date().getTime() + 3600),
-          led: 'FF0000',
+          led: '0000FF',
           sound: null
         });
 
-      },3000)
+      },5000)
     });
   }
 }
