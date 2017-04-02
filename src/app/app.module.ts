@@ -20,6 +20,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {LocalNotifications} from "@ionic-native/local-notifications";
 
 import {ModalContentPage} from "../pages/about/model_content_page.component";
+import {ModalContentPage0} from "../pages/targets/lessons0_modal_content_page.component";
+import {ModalContentPage1} from "../pages/targets/lessons1_modal_content_page.component";
 import {ModalContentPage2} from "../pages/targets/lessons_modal_content_page.component";
 import {ModalContentPage3} from "../pages/targets/lessons3_modal_content_page.component";
 
@@ -34,6 +36,8 @@ import {ModalContentPage3} from "../pages/targets/lessons3_modal_content_page.co
     Balance,
     Transaction,
     ModalContentPage,
+    ModalContentPage0,
+    ModalContentPage1,
     ModalContentPage2,
     ModalContentPage3,
     Allowance,
@@ -56,6 +60,8 @@ import {ModalContentPage3} from "../pages/targets/lessons3_modal_content_page.co
     Balance,
     Transaction,
     ModalContentPage,
+    ModalContentPage0,
+    ModalContentPage1,
     ModalContentPage2,
     ModalContentPage3,
     Allowance,
