@@ -11,7 +11,7 @@ import {Http, URLSearchParams} from '@angular/http';
             <ion-toolbar>
                 
                 <ion-title>
-                    Set Little Swift's Allowance
+                    Set Little Swifty's Allowance
                 </ion-title>
                 
                 <ion-buttons start>
