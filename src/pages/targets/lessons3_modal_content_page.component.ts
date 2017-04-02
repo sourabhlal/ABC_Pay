@@ -25,14 +25,17 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
         </ion-header>
 
         <ion-content padding>
+            
+            <ion-card>
+                <ion-card-content>
 
             <img src="assets/img/student_shopping.jpg"/>
             
-            <h2>
+            <ion-card-header>
 
                 1. Budget during the first weeks of term
-                
-            </h2>
+
+            </ion-card-header>
             
             <div>
 
@@ -40,12 +43,12 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
                 It’s hard to budget when you’re keen to have fun, but it is worth holding off on extravagant spending early on. If you want to go out and celebrate at the end of term, check out the top five student budget apps, to make sure you have something left to spend.
                 
             </div>
-
-            <h2>
+                    
+                    <ion-card-header>
 
                 2. Plan meals in advance
 
-            </h2>
+                    </ion-card-header>
 
             <div>
 
@@ -54,11 +57,11 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
 
             </div>
 
-            <h2>
+            <ion-card-header>
 
                 3. Enjoy student discounts
 
-            </h2>
+            </ion-card-header>
 
             <div>
 
@@ -67,11 +70,11 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
 
             </div>
 
-            <h2>
+            <ion-card-header>
 
                 4. Travel smarter
 
-            </h2>
+            </ion-card-header>
 
             <div>
 
@@ -80,11 +83,11 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
 
             </div>
 
-            <h2>
+            <ion-card-header>
 
                 5. Sell, sell, sell
 
-            </h2>
+            </ion-card-header>
 
             <div>
 
@@ -92,11 +95,11 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
 
             </div>
             
-            <h2>
+            <ion-card-header>
 
                 6. Head online for money saving tips
-                
-            </h2>
+
+            </ion-card-header>
             
             <div>
 
@@ -104,11 +107,11 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
                 
             </div>
 
-            <h2>
+            <ion-card-header>
 
                 7. Buy non-branded
 
-            </h2>
+            </ion-card-header>
 
             <div>
 
@@ -118,11 +121,11 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
 
             </div>
 
-            <h2>
+            <ion-card-header>
 
                 8. Avoid the kebab shop
 
-            </h2>
+            </ion-card-header>
 
             <div>
 
@@ -131,11 +134,11 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
 
             </div>
 
-            <h2>
+            <ion-card-header>
 
                 9. Get paid to do stuff
 
-            </h2>
+            </ion-card-header>
 
             <div>
 
@@ -144,20 +147,20 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
 
             </div>
 
-            <h2>
+            <ion-card-header>
 
                 10. ‘Pre-drinks’
 
-            </h2>
+            </ion-card-header>
 
             <div>
 
                 We’re not advocating drinking, but you’re a student now, so we suspect you’re doing it anyway. Take our advice on this, though – you’ll save money if you drink before going out. Your local supermarket is almost always going to beat student bars on price, so buy accordingly, and start your evening at home with friends. Bonus: you’ll actually be able to hear what they’re saying.
 
             </div>
-            
-            
-            
+
+                </ion-card-content>
+            </ion-card>
             
             
 
