@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Parent Admin Panel
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -17,11 +17,35 @@
       <ion-col>
 
         <ion-card-header text-center="true">
-          Remaining
+          Spent Today
         </ion-card-header>
 
         <ion-card-content text-center="true">
-          £8.53
+          <h1><spent></spent></h1>
+        </ion-card-content>
+
+      </ion-col>
+
+      <ion-col>
+
+        <ion-card-header text-center="true">
+          Remaining Today
+        </ion-card-header>
+
+        <ion-card-content text-center="true">
+          <h1><balance></balance></h1>
+        </ion-card-content>
+
+      </ion-col>
+
+      <ion-col>
+
+        <ion-card-header text-center="true">
+          Total Balance
+        </ion-card-header>
+
+        <ion-card-content text-center="true">
+          <h1><account-balance></account-balance></h1>
         </ion-card-content>
 
       </ion-col>
@@ -30,12 +54,12 @@
 
         <ion-card-header text-center="true">
 
-            Allowance
+            Daily Allowance
 
         </ion-card-header>
 
         <ion-card-content text-center="true">
-          £10
+          <h1><allowance></allowance></h1>
         </ion-card-content>
 
       </ion-col>
@@ -46,6 +70,14 @@
       <ion-col>
 
       </ion-col>
+      <ion-col>
+
+      </ion-col>
+
+      <ion-col>
+
+      </ion-col>
+
       <ion-col>
 
       </ion-col>
@@ -66,24 +98,9 @@
       Transactions
     </ion-card-header>
 
-    <ion-item-group>
-      <!--<ion-item-divider color="light">Today</ion-item-divider>-->
+<transaction-history>
 
-      <button ion-item>
-        <ion-icon name="cart" item-left></ion-icon>
-        Candy - $1.50
-      </button>
-
-      <button ion-item>
-        <ion-icon name="cafe" item-left></ion-icon>
-        Juice - $2.00
-      </button>
-
-      <button ion-item>
-        <ion-icon name="cafe" item-left></ion-icon>
-        Croissant - $1.00
-      </button>
-    </ion-item-group>
+</transaction-history>
   </ion-card>
 
 

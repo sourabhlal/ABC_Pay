@@ -9,7 +9,12 @@ import {ModalContentPage} from "./model_content_page.component";
 })
 export class AboutPage {
 
+    public remaining: string;
+    public allowance: string;
+
     constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
+
+        
 
     }
 

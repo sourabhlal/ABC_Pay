@@ -11,7 +11,7 @@ import {Http, URLSearchParams} from '@angular/http';
             <ion-toolbar>
                 
                 <ion-title>
-                    Set Allowance
+                    Set Little Swift's Allowance
                 </ion-title>
                 
                 <ion-buttons start>
@@ -67,7 +67,7 @@ export class ModalContentPage {
     }
  
    submit() {
-        var link = `http://localhost:8000/api/v1/set?balance=${this.balance}`;
+        var link = `https://mlhprime.pandelis.me/api/v1/set?balance=${this.balance}`;
         let body = new URLSearchParams()
         this.http.post(link, body)
         .map(res => res.json())
