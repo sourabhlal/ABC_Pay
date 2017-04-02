@@ -9,7 +9,21 @@
   <ion-card>
 
   <ion-card-header>
-    <balance class="title-card"></balance> Remaining for Today
+    <ion-row>
+
+      <ion-col>
+        <balance class="title-card"></balance>
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+
+      <ion-col>
+         Remaining for Today
+      </ion-col>
+      
+    </ion-row>
+    
   </ion-card-header>
  
   <ion-card-content>
@@ -27,7 +41,7 @@
 
   <ion-card>
     <ion-card-header>
-      Latest transactions {{percent}}
+      Latest transactions
     </ion-card-header>
 
     <transaction-history>
