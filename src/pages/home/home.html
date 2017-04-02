@@ -14,22 +14,20 @@
  
   <ion-card-content>
     <div class="item item-text-wrap">
-        <div class="loader" style="width: 30%;">
-          <p class="percent">30% left</p>
-        </div>
+       <remaining-loader></remaining-loader>
     </div>
   </ion-card-content>
   </ion-card>
 
   <ion-card>
       <ion-card-content>
-      <ion-icon name="alert" style="color:red"></ion-icon> At this rate you will run out of money by Monday!
+      <message></message>
     </ion-card-content>
   </ion-card>
 
   <ion-card>
     <ion-card-header>
-      Latest transactions
+      Latest transactions {{percent}}
     </ion-card-header>
 
     <transaction-history>

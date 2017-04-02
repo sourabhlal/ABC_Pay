@@ -12,6 +12,8 @@ import { AccountBalance } from './account-balance.component';
 import { Transaction } from './transaction.component';
 import { Allowance } from './allowance.component';
 import { Spent } from './spent.component';
+import {LoaderRemaining} from './loader.component';
+import { Message } from './message.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -36,7 +38,9 @@ import {ModalContentPage3} from "../pages/targets/lessons3_modal_content_page.co
     ModalContentPage3,
     Allowance,
     Spent,
-    AccountBalance
+    AccountBalance,
+    LoaderRemaining,
+    Message
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -56,7 +60,9 @@ import {ModalContentPage3} from "../pages/targets/lessons3_modal_content_page.co
     ModalContentPage3,
     Allowance,
     Spent,
-    AccountBalance
+    AccountBalance,
+    LoaderRemaining,
+    Message
   ],
   providers: [
     StatusBar,
