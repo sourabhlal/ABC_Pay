@@ -91,7 +91,7 @@ export class ContactPage {
                             },
                             scaleLabel: {
                                 display: true,
-                                labelString: '$'
+                                labelString: 'GBP'
                             }
                         }]
                 },
