@@ -41,9 +41,10 @@ export class Message {
         // component
         .subscribe(data => this.remaining = data.percentage);
         this.class = "message-regular";
-        if(parseInt(this.remaining) < 30){
+        if(parseInt(this.remaining) < 30 && parseInt(this.remaining) > 0){
+          this.class = "message-concern";
           this.message = "Looks like you're getting low on todays spening money Swift. Make sure not to overspend!"
-        }if(parseInt(this.remaining) === 0){
+        }else if(parseInt(this.remaining) === 0){
           this.class = "message-alarm";
           this.message = "Oh No! You're now overdrawn! You've now used up more money than you have. Money is not infinite you need to take care to spend carefully."
         }else {
