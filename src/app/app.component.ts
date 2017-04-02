@@ -22,7 +22,7 @@ export class MyApp {
 
 
         localNotifications.schedule({
-          text: 'Delayed ILocalNotification',
+          text: '£10 allowance was added to your account',
           at: new Date(new Date().getTime() + 3600),
           led: '0000FF',
           sound: null
