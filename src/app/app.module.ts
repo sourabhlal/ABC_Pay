@@ -12,6 +12,8 @@ import { Transaction } from './transaction.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {LocalNotifications} from "@ionic-native/local-notifications";
+
 import {ModalContentPage} from "../pages/about/model_content_page.component";
 import {ModalContentPage2} from "../pages/targets/lessons_modal_content_page.component";
 import {ModalContentPage3} from "../pages/targets/lessons3_modal_content_page.component";
@@ -26,9 +28,10 @@ import {ModalContentPage3} from "../pages/targets/lessons3_modal_content_page.co
     TargetsPage,
     Balance,
     Transaction,
-      ModalContentPage,
-      ModalContentPage2,
-      ModalContentPage3
+    ModalContentPage,
+    ModalContentPage2,
+    ModalContentPage3
+
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -44,12 +47,13 @@ import {ModalContentPage3} from "../pages/targets/lessons3_modal_content_page.co
     Balance,
     Transaction,
     ModalContentPage,
-      ModalContentPage2,
+    ModalContentPage2,
     ModalContentPage3
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    LocalNotifications,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
