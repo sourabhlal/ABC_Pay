@@ -10,7 +10,7 @@ import {NavParams, Platform, ViewController} from "ionic-angular";
             <ion-toolbar>
 
                 <ion-title>
-                    FAQs
+                    Budget Explainer
                 </ion-title>
 
                 <ion-buttons start>
