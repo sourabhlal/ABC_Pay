@@ -7,11 +7,9 @@ import {Observable} from 'rxjs/Rx';
 @Component({
   selector: 'remaining-loader',
   template: `
-
-    <div class="loader {{class}}" style="width: {{style}}%">
+    <div class="loader {{class}}" [ngStyle]="{width: style}">
       <p class="percent">{{percent}} % left</p>
     </div>
-
    `
 })
 export class LoaderRemaining {
@@ -39,13 +37,13 @@ export class LoaderRemaining {
         .subscribe(data => this.percent = data.percentage);
 
         if(parseInt(this.percent) < 30){
-          this.style = this.percent;
+          this.style = this.percent + '%';
           this.class = ",low-balance"
         }if(parseInt(this.percent) === 0){
-          this.style = "100"
+          this.style = "100%"
           this.class = ", overdrawn"
         }else {
-          this.style = this.percent
+          this.style = this.percent + '%'
           this.class = ", positive-balance"
         }
     });
