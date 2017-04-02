@@ -5,12 +5,12 @@ import {Observable} from 'rxjs/Rx';
 
 
 @Component({
-  selector: 'balance',
+  selector: 'spent',
   template: `
     {{balance}}
    `
 })
-export class Balance {
+export class Spent {
 
   balance: string;
   constructor(private http:Http) {
@@ -22,7 +22,7 @@ export class Balance {
         .map(res => res.json())
         // Subscribe to the observable to get the parsed people object and attach it to the
         // component
-        .subscribe(balance => this.balance = balance.remaining );
+        .subscribe(balance => this.balance = balance.spent );
     });
 
 

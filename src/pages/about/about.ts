@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ModalController, NavController, NavParams, Platform, ViewController} from 'ionic-angular';
+import {ModalController, NavController} from 'ionic-angular';
 import {ModalContentPage} from "./model_content_page.component";
 
 
@@ -9,7 +9,12 @@ import {ModalContentPage} from "./model_content_page.component";
 })
 export class AboutPage {
 
+    public remaining: string;
+    public allowance: string;
+
     constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
+
+        
 
     }
 

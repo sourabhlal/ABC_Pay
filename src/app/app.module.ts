@@ -8,13 +8,18 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { TargetsPage } from '../pages/targets/targets';
 
 import { Balance } from './balance.component';
+import { AccountBalance } from './account-balance.component';
 import { Transaction } from './transaction.component';
+import { Allowance } from './allowance.component';
+import { Spent } from './spent.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {LocalNotifications} from "@ionic-native/local-notifications";
 
 import {ModalContentPage} from "../pages/about/model_content_page.component";
+import {ModalContentPage2} from "../pages/targets/lessons_modal_content_page.component";
+import {ModalContentPage3} from "../pages/targets/lessons3_modal_content_page.component";
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import {ModalContentPage} from "../pages/about/model_content_page.component";
     TargetsPage,
     Balance,
     Transaction,
-    ModalContentPage
+    ModalContentPage,
+    ModalContentPage2,
+    ModalContentPage3,
+    Allowance,
+    Spent,
+    AccountBalance
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -41,7 +51,12 @@ import {ModalContentPage} from "../pages/about/model_content_page.component";
     TargetsPage,
     Balance,
     Transaction,
-    ModalContentPage
+    ModalContentPage,
+    ModalContentPage2,
+    ModalContentPage3,
+    Allowance,
+    Spent,
+    AccountBalance
   ],
   providers: [
     StatusBar,
